@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="pt-br" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="http://localhost/meu-site/login.php" method="POST">
+        <label for="user"></label>
+        <input
+          type="text"
+          id="user"
+          name="user"
+          placeholder="Nome do usuário"
+          required
+          oninvalid="setCustomVadiliry('Digite o usuário')"
+        /><br /><br />
+
+        <label for="password"></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Digite a senha"
+          required
+          oninvalid="setCustomVadiliry('Digite a senha')"
+        /><br /><br />
+
+        <label for="submit"></label>
+        <input type="submit" id="submit" value="Enviar" /><br /><br />
+      </form>
+    </div>
+  </body>
+</html>
