@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="pt-br" />
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <form action="http://localhost/meu-site/register.php" method="POST">
+        <h1>Cadastre-se</h1>
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nome Completo"
+          required
+          oninvalid="this.setCustomValidity('Preencha o nome do usuário')"
+        />
+        <br /><br />
+
+        <label for="phone"></label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Telefone"
+          required
+          oninvalid="this.setCustomValidity('Insira o número de telefone')"
+        />
+        <br /><br />
+        <label for="address"></label>
+        <input
+          type="tel"
+          id="address"
+          name="address"
+          placeholder="Endereço"
+          required
+          oninvalid="this.setCustomValidity('Insira o endereço')"
+        />
+        <br /><br />
+
+        <label for="email"></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Endereço de email"
+          required
+          oninvalid="this.setCustomValidity('Digite o endereço de email')"
+        />
+        <br /><br />
+
+        <label for="submit"></label>
+        <input type="submit" id="submit" value="Enviar" />
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>
